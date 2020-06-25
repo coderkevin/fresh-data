@@ -2,8 +2,8 @@
 
 Fresh Data is a declarative data API framework for JavaScript apps.
 
-[![Build Status](https://travis-ci.org/Automattic/fresh-data.svg?branch=master)](https://travis-ci.org/Automattic/fresh-data)
-[![Test Coverage](https://img.shields.io/codecov/c/github/Automattic/fresh-data.svg)](https://travis-ci.org/Automattic/fresh-data)
+[![Build Status](https://travis-ci.org/coderkevin/fresh-data.svg?branch=master)](https://travis-ci.org/coderkevin/fresh-data)
+[![Test Coverage](https://img.shields.io/codecov/c/github/coderkevin/fresh-data.svg)](https://travis-ci.org/coderkevin/fresh-data)
 
 ## Caveat
 

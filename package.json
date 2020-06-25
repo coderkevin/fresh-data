@@ -4,9 +4,9 @@
 	"private": true,
 	"description": "Describe the data you need and simply use it in your app.",
 	"license": "MIT",
-	"homepage": "https://github.com/automattic/fresh-data#readme",
-	"repository": "github:automattic/fresh-data",
-	"bugs": "https://github.com/automattic/fresh-data/issues",
+	"homepage": "https://github.com/coderkevin/fresh-data#readme",
+	"repository": "github:coderkevin/fresh-data",
+	"bugs": "https://github.com/coderkevin/fresh-data/issues",
 	"keywords": [
 		"javascript",
 		"api",
@@ -16,7 +16,7 @@
 		"react",
 		"redux"
 	],
-	"author": "Kevin Killingsworth <kevin.killingsworth@automattic.com> (https://github.com/coderkevin)",
+	"author": "Kevin Killingsworth <kk@redfenix.com> (https://github.com/coderkevin)",
 	"scripts": {
 		"clean": "lerna run clean && rimraf node_modules",
 		"linkLocal": "lerna link --force-local",
