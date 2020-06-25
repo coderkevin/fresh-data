@@ -6,10 +6,12 @@ Fresh Data isn't an API. It's *your* API made easier to use!
 It offers a single integration point between APIs and your application.
 The application simply declares the data it needs and the Fresh APIs ensure that the data it receives stays fresh.
 
-[![Build Status](https://travis-ci.org/Automattic/fresh-data.svg?branch=master)](https://travis-ci.org/Automattic/fresh-data)
-[![Test Coverage](https://img.shields.io/codecov/c/github/Automattic/fresh-data.svg)](https://travis-ci.org/Automattic/fresh-data)
+[![Build Status](https://travis-ci.org/coderkevin/fresh-data.svg?branch=master)](https://travis-ci.org/coderkevin/fresh-data)
+[![Test Coverage](https://img.shields.io/codecov/c/github/coderkevin/fresh-data.svg)](https://travis-ci.org/coderkevin/fresh-data)
 
 ## Caveat
+
+**Fresh Data will be undergoing a fairly major update very soon. Stay tuned!**
 
 Fresh Data is new. Very new. As such it should *not* be used in production just yet! This code will be changing still.
 
@@ -191,8 +193,17 @@ Fresh Data is functional, but still a work in progress. Here's what's next on th
   - Detecting when data was last rendered
   - Unlinking data over a threshold
 
+## A note about the fresh-data project history
+
+Hi, I'm Kevin Killingsworth, known as coderkevin in most places. I created fresh-data while I
+was at Automattic. The original repository as it was created still exists, but is no longer
+supported or maintained there. This repository is the new home for fresh-data. I've copied the
+repo history, but chose not to fork it to save some folks the confusion of following a link to
+a legacy, unmaintained parent repo.
+
 ## License
 
+Copyright 2020 Kevin Killingsworth
 Copyright 2018 Automattic, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
