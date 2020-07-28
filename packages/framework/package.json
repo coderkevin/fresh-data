@@ -61,7 +61,7 @@
 		"eslint-config-wordpress": "2.0.0",
 		"eslint-plugin-jest": "23.17.1",
 		"eslint-plugin-jsx-a11y": "6.3.1",
-		"eslint-plugin-react": "7.20.0",
+		"eslint-plugin-react": "7.20.5",
 		"eslint-plugin-wordpress": "git://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress.git",
 		"identity-obj-proxy": "3.0.0",
 		"jest": "24.9.0",
