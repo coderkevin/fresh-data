@@ -11,20 +11,6 @@ describe( 'ApiProvider', () => {
 		apiSpec = {};
 	} );
 
-	it( 'should render without crashing.', () => {
-		mount(
-			<ApiProvider
-				apiSpec={ apiSpec }
-				apiName={ 'test-api' }
-				rootData={ {} }
-				dataRequested={ actions.dataRequested }
-				dataReceived={ actions.dataReceived }
-			>
-				<span>Testing</span>
-			</ApiProvider>
-		);
-	} );
-
 	describe( '#getApiClient', () => {
 		it( 'should pass down getApiClient to children via context.', () => {
 			let childContext = null;
