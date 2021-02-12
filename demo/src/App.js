@@ -4,6 +4,10 @@ import HelloWorld from './HelloWorld';
 import WPRestApi from './WPRestApi';
 import './App.css';
 
+if ( 'development' === process.env.NODE_ENV ) {
+	window.__FRESH_DATA_DEV_INFO__ = true;
+}
+
 const demos = {
 	'Hello World': HelloWorld,
 	'GitHub REST': GitHubRestApi,

@@ -15,8 +15,10 @@ export const get = ( fetch, baseUrl ) => ( endpointPath, params ) => {
 	} );
 };
 
-export default ( baseUrl, fetch = window.fetch ) => {
+const httpFetch = ( baseUrl, fetch = window.fetch ) => {
 	return {
 		get: get( fetch, baseUrl ),
 	};
 };
+
+export default httpFetch;

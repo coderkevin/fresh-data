@@ -40,7 +40,7 @@ export function fetchGreetings() {
 	} );
 }
 
-export default {
+const testApi = {
 	name: 'helloWorld',
 	operations: {
 		read: ( resourceNames ) => {
@@ -64,3 +64,5 @@ export default {
 		}
 	},
 };
+
+export default testApi;
