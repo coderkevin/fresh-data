@@ -185,8 +185,7 @@ export default MyApp = () => {
 
 Fresh Data is functional, but still a work in progress. Here's what's next on the list:
 - More examples:
-  - GitHub API
-  - GraphQL
+  - GitHub GraphQL API
   - WebSockets
 - Feature: Fetch on first mount (regardless of freshness)
 - Feature: Clearing out old data
