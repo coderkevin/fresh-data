@@ -31,7 +31,6 @@
 		"build:umd": "cross-env NODE_ENV=development rollup -c -o dist/fresh-data-framework.js",
 		"build:umd:min": "cross-env NODE_ENV=production rollup -c -o dist/fresh-data-framework.min.js",
 		"build": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
-		"lint": "eslint .",
 		"test": "jest --verbose --runInBand src",
 		"test:watch": "jest --runInBand --watchAll src",
 		"prepublishOnly": "npm run clean && npm install && npm run lint && npm test && npm run build"

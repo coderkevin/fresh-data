@@ -1,0 +1,5 @@
+demo
+packages/*/coverage
+packages/*/dist
+packages/*/es
+packages/*/lib

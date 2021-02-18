@@ -6583,7 +6583,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-wordpress@npm:2.0.0":
+"eslint-config-wordpress@npm:2.0.0, eslint-config-wordpress@npm:^2.0.0":
   version: 2.0.0
   resolution: "eslint-config-wordpress@npm:2.0.0"
   checksum: 248c2794a7fe3c2af45c01627dc8c3ad65c4d53984599ec087f516edc3a90fb757f089ca17193148306bfd64c3fcc892de680c056af39dd72ae1a092bd7e0f6c
@@ -6652,7 +6652,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:24.1.5, eslint-plugin-jest@npm:^24.1.0":
+"eslint-plugin-jest@npm:24.1.5, eslint-plugin-jest@npm:^24.1.0, eslint-plugin-jest@npm:^24.1.5":
   version: 24.1.5
   resolution: "eslint-plugin-jest@npm:24.1.5"
   dependencies:
@@ -6675,7 +6675,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsx-a11y@npm:6.4.1, eslint-plugin-jsx-a11y@npm:^6.3.1":
+"eslint-plugin-jsx-a11y@npm:6.4.1, eslint-plugin-jsx-a11y@npm:^6.3.1, eslint-plugin-jsx-a11y@npm:^6.4.1":
   version: 6.4.1
   resolution: "eslint-plugin-jsx-a11y@npm:6.4.1"
   dependencies:
@@ -6719,7 +6719,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:7.22.0, eslint-plugin-react@npm:^7.21.5":
+"eslint-plugin-react@npm:7.22.0, eslint-plugin-react@npm:^7.21.5, eslint-plugin-react@npm:^7.22.0":
   version: 7.22.0
   resolution: "eslint-plugin-react@npm:7.22.0"
   dependencies:
@@ -6834,7 +6834,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:7.20.0, eslint@npm:^7.11.0":
+"eslint@npm:7.20.0, eslint@npm:^7.11.0, eslint@npm:^7.20.0":
   version: 7.20.0
   resolution: "eslint@npm:7.20.0"
   dependencies:
@@ -7505,7 +7505,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "fresh-data@workspace:."
   dependencies:
+    babel-eslint: 10.1.0
     codecov: 3.8.1
+    eslint: ^7.20.0
+    eslint-config-wordpress: ^2.0.0
+    eslint-plugin-jest: ^24.1.5
+    eslint-plugin-jsx-a11y: ^6.4.1
+    eslint-plugin-react: ^7.22.0
+    eslint-plugin-wordpress: "git://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress.git"
+    jest: ^26.6.3
+    lodash: ^4.17.20
     rimraf: 3.0.2
   languageName: unknown
   linkType: soft
@@ -9840,7 +9849,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest@npm:26.6.3":
+"jest@npm:26.6.3, jest@npm:^26.6.3":
   version: 26.6.3
   resolution: "jest@npm:26.6.3"
   dependencies:
