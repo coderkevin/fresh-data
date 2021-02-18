@@ -2,6 +2,10 @@
 	"name": "fresh-data",
 	"version": "0.2.0",
 	"private": true,
+	"workspaces": [
+		"packages/*",
+		"demo"
+	],
 	"description": "Describe the data you need and simply use it in your app.",
 	"license": "MIT",
 	"homepage": "https://github.com/coderkevin/fresh-data#readme",
@@ -18,28 +22,15 @@
 	],
 	"author": "Kevin Killingsworth <kk@redfenix.com> (https://github.com/coderkevin)",
 	"scripts": {
-		"clean": "lerna run clean && rimraf node_modules",
-		"linkLocal": "lerna link --force-local",
-		"bootstrap": "lerna bootstrap",
-		"lint": "lerna run lint",
-		"test": "lerna run test",
+		"clean": "yarn cache clean && rimraf node_modules && yarn workspaces run clean",
+		"lint": "yarn workspaces run lint",
+		"build": "yarn workspaces run build",
+		"test": "yarn workspaces run test",
 		"coverage": "codecov",
-		"build": "lerna run build",
-		"prepublishOnly": "npm run clean && npm run lint && npm run build && npm test"
+		"prepublishOnly": "yarn clean && yarn lint && yarn build && yarn test"
 	},
 	"devDependencies": {
-		"@fresh-data/framework": "file:./packages/framework",
-		"babel-eslint": "10.1.0",
 		"codecov": "3.8.1",
-		"cross-env": "7.0.3",
-		"eslint": "7.20.0",
-		"eslint-config-wordpress": "2.0.0",
-		"eslint-plugin-jest": "24.1.5",
-		"eslint-plugin-jsx-a11y": "6.4.1",
-		"eslint-plugin-react": "7.22.0",
-		"eslint-plugin-wordpress": "git://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress.git",
-		"har-validator": "5.1.5",
-		"lerna": "3.22.1",
 		"rimraf": "3.0.2"
 	}
 }
