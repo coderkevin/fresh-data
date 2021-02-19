@@ -173,6 +173,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-create-class-features-plugin@npm:^7.12.17":
+  version: 7.12.17
+  resolution: "@babel/helper-create-class-features-plugin@npm:7.12.17"
+  dependencies:
+    "@babel/helper-function-name": ^7.12.13
+    "@babel/helper-member-expression-to-functions": ^7.12.17
+    "@babel/helper-optimise-call-expression": ^7.12.13
+    "@babel/helper-replace-supers": ^7.12.13
+    "@babel/helper-split-export-declaration": ^7.12.13
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: 4ff31729369889c871fba71899b8e1c292c636af854b0d1552cc9935bb29b56563cfa654cecc951eaec47df67de0b41b84eaa95b9ee5eaaea1c20d4daae43672
+  languageName: node
+  linkType: hard
+
 "@babel/helper-create-regexp-features-plugin@npm:^7.12.13":
   version: 7.12.16
   resolution: "@babel/helper-create-regexp-features-plugin@npm:7.12.16"
@@ -229,6 +244,15 @@ __metadata:
   dependencies:
     "@babel/types": ^7.12.13
   checksum: d4c86c2686343013a4cb1e67085293ec18cd9b5797d8bd97df51250ff55ea9cf111a62dc721c346ada33c05315cbd69f7ab880b1d5d513e9858e000b70d86845
+  languageName: node
+  linkType: hard
+
+"@babel/helper-member-expression-to-functions@npm:^7.12.17":
+  version: 7.12.17
+  resolution: "@babel/helper-member-expression-to-functions@npm:7.12.17"
+  dependencies:
+    "@babel/types": ^7.12.17
+  checksum: a938e68961f628b5ae5468c85ab7aba2929d68b4b9c0a32352ec8fc4dd51bbed26c7ba1eb7b0eb4d8f96419dbd64aa76636e25bbb7726036963928f1610fead7
   languageName: node
   linkType: hard
 
@@ -335,6 +359,13 @@ __metadata:
   version: 7.12.16
   resolution: "@babel/helper-validator-option@npm:7.12.16"
   checksum: df6c04030ac3ed5ac49f1eaf5a25b3c86b5c4e1bbb290c595fe1b4b6729976c37f05110b925c03e1450e00adcab70fa1896f4acbbe7b52ac8f7b870917aa163f
+  languageName: node
+  linkType: hard
+
+"@babel/helper-validator-option@npm:^7.12.17":
+  version: 7.12.17
+  resolution: "@babel/helper-validator-option@npm:7.12.17"
+  checksum: 9201d17a5634b05a6f3d561b95e73a4e4f9ba2e56c55cfc3b9a2a9618c4090b4b507720ac7a2e77209e68dc9bdc00a59b5ba7ad9ecbca3fb2c9217e814b7b5a5
   languageName: node
   linkType: hard
 
@@ -1298,6 +1329,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-transform-typescript@npm:^7.12.17":
+  version: 7.12.17
+  resolution: "@babel/plugin-transform-typescript@npm:7.12.17"
+  dependencies:
+    "@babel/helper-create-class-features-plugin": ^7.12.17
+    "@babel/helper-plugin-utils": ^7.12.13
+    "@babel/plugin-syntax-typescript": ^7.12.13
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 81aae98041f8f1033f58e099653a00612d601a1a16ea40008fe2781d9cd806885fccdf4bc930168d8e3ef8ab35ce95947560e57131b5ff19c7d021c8011fed65
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-transform-unicode-escapes@npm:^7.12.1, @babel/plugin-transform-unicode-escapes@npm:^7.12.13":
   version: 7.12.13
   resolution: "@babel/plugin-transform-unicode-escapes@npm:7.12.13"
@@ -1532,6 +1576,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/preset-typescript@npm:^7.12.17":
+  version: 7.12.17
+  resolution: "@babel/preset-typescript@npm:7.12.17"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.12.13
+    "@babel/helper-validator-option": ^7.12.17
+    "@babel/plugin-transform-typescript": ^7.12.17
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: db2a9caed33c81f922cb2bb90f713c328d8924d47794726cc43eae887d22816e82d9fb0522f3480b02355536b10a5db995126ed5d488817c3fe25b289108a032
+  languageName: node
+  linkType: hard
+
 "@babel/runtime-corejs3@npm:^7.10.2":
   version: 7.12.13
   resolution: "@babel/runtime-corejs3@npm:7.12.13"
@@ -1599,6 +1656,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/types@npm:^7.12.17":
+  version: 7.12.17
+  resolution: "@babel/types@npm:7.12.17"
+  dependencies:
+    "@babel/helper-validator-identifier": ^7.12.11
+    lodash: ^4.17.19
+    to-fast-properties: ^2.0.0
+  checksum: 31886bfea9c34d2d019722888d944fe5e33495826ae677ea465f0615294925a08eb4059d34b29f2808461cde85841b93ca61cdcd747fa45054a64f6b33fa2862
+  languageName: node
+  linkType: hard
+
 "@bcoe/v8-coverage@npm:^0.2.3":
   version: 0.2.3
   resolution: "@bcoe/v8-coverage@npm:0.2.3"
@@ -1656,11 +1724,13 @@ __metadata:
   dependencies:
     "@babel/cli": 7.12.16
     "@babel/core": 7.12.16
-    "@babel/plugin-proposal-class-properties": 7.12.13
+    "@babel/plugin-proposal-class-properties": ^7.12.13
     "@babel/plugin-proposal-object-rest-spread": 7.12.13
     "@babel/plugin-transform-async-to-generator": 7.12.13
+    "@babel/plugin-transform-modules-commonjs": ^7.12.13
     "@babel/plugin-transform-runtime": 7.12.15
     "@babel/preset-env": 7.12.16
+    "@babel/preset-typescript": ^7.12.17
     "@babel/runtime": ^7.4.2
     "@rollup/plugin-babel": 5.3.0
     babel-core: 7.0.0-bridge.0
@@ -1680,10 +1750,11 @@ __metadata:
     lodash: 4.17.20
     rimraf: 3.0.2
     rollup: 2.39.0
-    rollup-plugin-commonjs: 10.1.0
     rollup-plugin-node-resolve: 5.2.0
     rollup-plugin-replace: 2.2.0
     rollup-plugin-terser: 7.0.2
+    rollup-plugin-typescript2: ^0.30.0
+    typescript: ^4.1.5
   peerDependencies:
     debug: ^3.1.0 || ^4.0.0
     lodash: ^4.17.10
@@ -2242,6 +2313,18 @@ __metadata:
   peerDependencies:
     rollup: ^1.20.0||^2.0.0
   checksum: 45da6411e045d1b034242a8144f4a5e8c02ff1b68a2e0857807f5bb4b091c416f2015e075057f0f0dec200e7b35efe6ed4e301b43e365cedea09192f01a6839b
+  languageName: node
+  linkType: hard
+
+"@rollup/pluginutils@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@rollup/pluginutils@npm:4.1.0"
+  dependencies:
+    estree-walker: ^2.0.1
+    picomatch: ^2.2.2
+  peerDependencies:
+    rollup: ^1.20.0||^2.0.0
+  checksum: 566b8d2bcc0d52877f8c9f364026be40fa921c8d5860b5f2a5f476658dfebf462536632f079aa3f52fafe64d8aea6741c20bb198e67b33eaba8f9fe69b38ae3f
   languageName: node
   linkType: hard
 
@@ -6948,6 +7031,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"estree-walker@npm:^2.0.1":
+  version: 2.0.2
+  resolution: "estree-walker@npm:2.0.2"
+  checksum: 378cc9d3be56962c5219c55ad1fde732cb7d55a11cde5acbf5995f39ddd0e98c1095a43c0ef15a520d1d6910e816bd3daff5fc5d7d38baaf8b12d5a2970df57c
+  languageName: node
+  linkType: hard
+
 "esutils@npm:^2.0.2":
   version: 2.0.3
   resolution: "esutils@npm:2.0.3"
@@ -7536,6 +7626,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fs-extra@npm:8.1.0, fs-extra@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "fs-extra@npm:8.1.0"
+  dependencies:
+    graceful-fs: ^4.2.0
+    jsonfile: ^4.0.0
+    universalify: ^0.1.0
+  checksum: 056a96d4f55ab8728b021e251175a4a6440d1edb5845e6c2e8e010019bde3e63de188a0eb99386c21c71804ca1a571cd6e08f507971f10a2bc4f4f7667720fa4
+  languageName: node
+  linkType: hard
+
 "fs-extra@npm:^7.0.0":
   version: 7.0.1
   resolution: "fs-extra@npm:7.0.1"
@@ -7544,17 +7645,6 @@ __metadata:
     jsonfile: ^4.0.0
     universalify: ^0.1.0
   checksum: 0de3773953a13b517f053dbfa291166da076cc563cdd8f0ecefc64018ab15d2614f1707860b82e6b0e41695f613c1855f410749bd01bcb585f0243b1018a6595
-  languageName: node
-  linkType: hard
-
-"fs-extra@npm:^8.1.0":
-  version: 8.1.0
-  resolution: "fs-extra@npm:8.1.0"
-  dependencies:
-    graceful-fs: ^4.2.0
-    jsonfile: ^4.0.0
-    universalify: ^0.1.0
-  checksum: 056a96d4f55ab8728b021e251175a4a6440d1edb5845e6c2e8e010019bde3e63de188a0eb99386c21c71804ca1a571cd6e08f507971f10a2bc4f4f7667720fa4
   languageName: node
   linkType: hard
 
@@ -13891,7 +13981,7 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
-"resolve@^1.10.0, resolve@^1.11.0, resolve@^1.11.1, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.14.2, resolve@^1.17.0, resolve@^1.18.1, resolve@^1.3.2, resolve@^1.3.3, resolve@^1.8.1":
+"resolve@1.20.0, resolve@^1.10.0, resolve@^1.11.0, resolve@^1.11.1, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.14.2, resolve@^1.17.0, resolve@^1.18.1, resolve@^1.3.2, resolve@^1.3.3, resolve@^1.8.1":
   version: 1.20.0
   resolution: "resolve@npm:1.20.0"
   dependencies:
@@ -13911,7 +14001,7 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.10.0#builtin<compat/resolve>, resolve@patch:resolve@^1.11.0#builtin<compat/resolve>, resolve@patch:resolve@^1.11.1#builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#builtin<compat/resolve>, resolve@patch:resolve@^1.18.1#builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#builtin<compat/resolve>, resolve@patch:resolve@^1.3.3#builtin<compat/resolve>, resolve@patch:resolve@^1.8.1#builtin<compat/resolve>":
+"resolve@patch:resolve@1.20.0#builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#builtin<compat/resolve>, resolve@patch:resolve@^1.11.0#builtin<compat/resolve>, resolve@patch:resolve@^1.11.1#builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#builtin<compat/resolve>, resolve@patch:resolve@^1.18.1#builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#builtin<compat/resolve>, resolve@patch:resolve@^1.3.3#builtin<compat/resolve>, resolve@patch:resolve@^1.8.1#builtin<compat/resolve>":
   version: 1.20.0
   resolution: "resolve@patch:resolve@npm%3A1.20.0#builtin<compat/resolve>::version=1.20.0&hash=3388aa"
   dependencies:
@@ -14084,6 +14174,22 @@ resolve@1.18.1:
   peerDependencies:
     rollup: ">=0.66.0 <3"
   checksum: 18ebbdc41ae13b89f033314942b104320507133ade4f865d36fc17263662686f459aea2ba7ade6eb069e8630e27fb8183f03e752d9b62f0f6a3cf8a635e71c5f
+  languageName: node
+  linkType: hard
+
+"rollup-plugin-typescript2@npm:^0.30.0":
+  version: 0.30.0
+  resolution: "rollup-plugin-typescript2@npm:0.30.0"
+  dependencies:
+    "@rollup/pluginutils": ^4.1.0
+    find-cache-dir: ^3.3.1
+    fs-extra: 8.1.0
+    resolve: 1.20.0
+    tslib: 2.1.0
+  peerDependencies:
+    rollup: ">=1.26.3"
+    typescript: ">=2.4.0"
+  checksum: 3bf7a4d398f53461d6486ddb92f3649e646a6d1f89340090bb242764e9ba09e97d48659ffa9135e3c8b898d9ed3bcca9269e0d6beaef4e44659ae06791f79bea
   languageName: node
   linkType: hard
 
@@ -15668,17 +15774,17 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
+"tslib@npm:2.1.0, tslib@npm:^2.0.3":
+  version: 2.1.0
+  resolution: "tslib@npm:2.1.0"
+  checksum: d8f5bdd067611651c6b846c2388f4dc8ba1f5af124e66105f5263d1ad56da17f4b8c6566887ca2f205c5a9758451871ceca87d5d06087af2dca1699c5e33db69
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.8.1, tslib@npm:^1.9.0":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: f44fe7f216946b17d3e3074df3746372703cf24e9127b4c045511456e8e4bf25515fb0a1bb3937676cc305651c5d4fcb6377b0588a4c6a957e748c4c28905d17
-  languageName: node
-  linkType: hard
-
-"tslib@npm:^2.0.3":
-  version: 2.1.0
-  resolution: "tslib@npm:2.1.0"
-  checksum: d8f5bdd067611651c6b846c2388f4dc8ba1f5af124e66105f5263d1ad56da17f4b8c6566887ca2f205c5a9758451871ceca87d5d06087af2dca1699c5e33db69
   languageName: node
   linkType: hard
 
@@ -15806,6 +15912,26 @@ resolve@1.18.1:
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
   checksum: c9ef0176aaf32593514c31e5c6edc1db970847aff6e1f0a0570a6ac0cc996335792f394c2fcec59cc76691d22a01888ea073a2f3c6930cfcf7c519addf4e2ad7
+  languageName: node
+  linkType: hard
+
+typescript@^4.1.5:
+  version: 4.1.5
+  resolution: "typescript@npm:4.1.5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 29157c84426ac94ce97aac836264f303a26bd9fb30865650229e3406a36ca2e89735ef4b8878075ba1b95fa4d3ff9810057b64888700c28e20b4034a6db4da83
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.1.5#builtin<compat/typescript>":
+  version: 4.1.5
+  resolution: "typescript@patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 58cc7786be0f8485c124944883b1384287532e4867ec37f1fb5cb2811dbc10f7a9decccad89097f924043285f3515bfd8223c61dbb4f88af00b2d8dc2ef73207
   languageName: node
   linkType: hard
 

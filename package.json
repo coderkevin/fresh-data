@@ -24,7 +24,7 @@
 	"scripts": {
 		"clean": "yarn cache clean && rimraf node_modules && yarn workspaces run clean",
 		"lint": "eslint .",
-		"build": "yarn workspaces run build",
+		"build": "yarn workspaces foreach run build",
 		"test": "yarn workspaces run test",
 		"coverage": "codecov",
 		"prepublishOnly": "yarn clean && yarn lint && yarn build && yarn test"
