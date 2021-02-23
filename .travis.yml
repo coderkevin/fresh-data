@@ -3,9 +3,9 @@ language: node_js
 node_js:
   - "12"
 script:
-  - npm run bootstrap
-  - npm run lint
-  - npm run build
-  - npm test
+  - yarn
+  - yarn lint
+  - yarn build
+  - yarn test
 after_success:
-  - npm run coverage
+  - yarn coverage

@@ -25,15 +25,12 @@
 		"src"
 	],
 	"scripts": {
-		"clean": "rimraf lib dist es coverage node_modules",
-		"build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
-		"build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
-		"build:umd": "cross-env BABEL_ENV=rollup NODE_ENV=development rollup -c -o dist/fresh-data-react-provider.js",
-		"build:umd:min": "cross-env BABEL_ENV=rollup NODE_ENV=production rollup -c -o dist/fresh-data-react-provider.min.js",
-		"build": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
-		"test": "jest --runInBand src",
+		"build": "rollup -c",
+		"clean": "rimraf lib dist es coverage types",
+		"check-types": "tsc --noEmit",
+		"test": "jest --verbose --runInBand src",
 		"test:watch": "jest --runInBand --watchAll src",
-		"prepublishOnly": "npm run clean && npm install && npm run lint && npm test && npm run build"
+		"prepublishOnly": "yarn run clean && yarn install && yarn run lint && yarn test && yarn run build"
 	},
 	"peerDependencies": {
 		"@fresh-data/framework": "^0.7.0-beta",
@@ -53,9 +50,12 @@
 		"@babel/core": "7.12.16",
 		"@babel/plugin-proposal-class-properties": "7.12.13",
 		"@babel/plugin-proposal-object-rest-spread": "7.12.13",
+		"@babel/plugin-transform-modules-commonjs": "^7.12.13",
 		"@babel/plugin-transform-react-jsx": "7.12.16",
 		"@babel/plugin-transform-runtime": "7.12.15",
 		"@babel/preset-env": "7.12.16",
+		"@babel/preset-react": "^7.12.13",
+		"@babel/preset-typescript": "^7.12.17",
 		"@fresh-data/framework": "^0.7.0",
 		"@rollup/plugin-babel": "5.3.0",
 		"@testing-library/jest-dom": "5.11.9",
@@ -63,12 +63,10 @@
 		"ajv": "7.1.1",
 		"babel-core": "7.0.0-bridge.0",
 		"babel-eslint": "10.1.0",
-		"babel-jest": "26.6.3",
+		"babel-jest": "^26.6.3",
 		"codecov": "3.8.1",
 		"cross-env": "7.0.3",
 		"debug": "4.3.1",
-		"enzyme": "3.11.0",
-		"enzyme-adapter-react-16": "1.15.6",
 		"eslint": "7.20.0",
 		"eslint-config-wordpress": "2.0.0",
 		"eslint-plugin-jest": "24.1.5",
@@ -77,8 +75,6 @@
 		"eslint-plugin-wordpress": "git://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress.git",
 		"identity-obj-proxy": "3.0.0",
 		"jest": "26.6.3",
-		"jest-environment-enzyme": "7.1.2",
-		"jest-enzyme": "7.1.2",
 		"lodash": "4.17.20",
 		"react": "17.0.1",
 		"react-dom": "17.0.1",
@@ -86,30 +82,23 @@
 		"redux": "4.0.5",
 		"rimraf": "3.0.2",
 		"rollup": "2.39.0",
-		"rollup-plugin-commonjs": "10.1.0",
 		"rollup-plugin-node-resolve": "5.2.0",
 		"rollup-plugin-replace": "2.2.0",
-		"rollup-plugin-uglify": "6.0.4"
+		"rollup-plugin-terser": "^7.0.2",
+		"rollup-plugin-typescript2": "^0.30.0",
+		"typescript": "^4.1.5"
 	},
 	"publishConfig": {
 		"access": "public"
 	},
 	"jest": {
-		"testURL": "http://localhost/",
+		"testRegex": "(/__tests__/.*\\.spec\\.[tj]s)$",
 		"verbose": true,
 		"collectCoverage": true,
 		"coverageDirectory": "../../coverage",
-		"moduleNameMapper": {
-			"\\.(css)$": "identity-obj-proxy"
-		},
-		"setupFilesAfterEnv": [
-			"jest-enzyme"
-		],
-		"testEnvironment": "enzyme",
-		"testPathIgnorePatterns": [
-			"/node_modules/",
-			"/examples/"
-		]
+		"transform": {
+			"\\.[jt]s?$": "babel-jest"
+		}
 	},
 	"gitHead": "77ce7e85b2c5179497bbb98a813b9a9a6c0f852b"
 }

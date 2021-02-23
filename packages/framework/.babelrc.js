@@ -1,5 +1,3 @@
-const { NODE_ENV, BABEL_ENV } = process.env;
-
 module.exports = {
 	presets: [
 		'@babel/typescript',
@@ -19,9 +17,9 @@ module.exports = {
 		// dont use 'loose' mode here - need to copy symbols when spreading
 		'@babel/proposal-object-rest-spread',
 		'@babel/proposal-class-properties',
-		NODE_ENV === 'test' && '@babel/transform-modules-commonjs',
+		process.env.NODE_ENV === 'test' && '@babel/transform-modules-commonjs',
 	].filter( Boolean ),
 	ignore: [
-		NODE_ENV !== 'test' && '**/__tests__/**',
+		process.env.NODE_ENV !== 'test' && '**/__tests__/**',
 	].filter( Boolean ),
 };
