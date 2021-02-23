@@ -1,47 +1,149 @@
 import babel from '@rollup/plugin-babel';
-import nodeResolve from 'rollup-plugin-node-resolve';
+import resolve from 'rollup-plugin-node-resolve';
 import replace from 'rollup-plugin-replace';
-import commonjs from 'rollup-plugin-commonjs';
+import typescript from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
+
 import pkg from './package.json';
 
-const env = process.env.NODE_ENV;
+const extensions = [ '.ts', '.js' ];
+const noDeclarationFiles = { compilerOptions: { declaration: false } };
+const babelRuntimeVersion = pkg.dependencies['@babel/runtime'].replace( /^[^0-9]*/, '' );
 
-const config = {
-	input: 'src/index.js',
-	external: Object.keys( pkg.peerDependencies || {} ),
-	output: {
-		format: 'umd',
-		name: 'FreshDataFramework',
-		globals: {
-			debug: 'Debug',
-			lodash: '_',
-		},
-	},
-	plugins: [
-		nodeResolve(),
-		babel( {
-			exclude: '**/node_modules/**',
-			babelHelpers: 'runtime',
-		} ),
-		replace( {
-			'process.env.NODE_ENV': JSON.stringify( env ),
-		} ),
-		commonjs(),
-	],
+const externalDependencyGlobals = {
+	debug: 'Debug',
+	lodash: '_',
 };
 
-if ( 'production' === env ) {
-	config.plugins.push(
-		terser( {
-			compress: {
-				pure_getters: true, // eslint-disable-line camelcase
-				unsafe: true,
-				unsafe_comps: true, // eslint-disable-line camelcase
-			},
-			warnings: false,
-		} )
-	);
-}
+const externalDependencyString = [
+	...Object.keys( pkg.dependencies ) || {},
+	...Object.keys( pkg.peerDependencies ) || {},
+].join( '|' );
 
-export default config;
+const isExternalDependency = ( key ) => {
+	const pattern = new RegExp( `^(${ externalDependencyString })($|/)` );
+	return pattern.test( key );
+};
+
+export default [
+	// CommonJS
+	{
+		input: 'src/index.js',
+		output: { file: 'lib/index.js', format: 'cjs', indent: false },
+		external: isExternalDependency,
+		plugins: [
+			resolve( { extensions } ),
+			typescript( { useTsconfigDeclarationDir: true } ),
+			babel( {
+				extensions,
+				plugins: [
+					[ '@babel/plugin-transform-runtime', { version: babelRuntimeVersion } ],
+				],
+				babelHelpers: 'runtime',
+			} ),
+		],
+	},
+
+	// ES
+	{
+		input: 'src/index.js',
+		output: { file: 'es/index.js', format: 'es', indent: false },
+		external: isExternalDependency,
+		plugins: [
+			resolve( { extensions } ),
+			typescript( { tsconfigOverride: noDeclarationFiles } ),
+			babel( {
+				extensions,
+				plugins: [
+					[
+						'@babel/plugin-transform-runtime',
+						{ version: babelRuntimeVersion, useESModules: true },
+					],
+				],
+				babelHelpers: 'runtime',
+			} ),
+		],
+	},
+
+	// ES for Browsers
+	{
+		input: 'src/index.js',
+		output: { file: 'es/index.mjs', format: 'es', indent: false },
+		external: isExternalDependency,
+		plugins: [
+			resolve( { extensions } ),
+			replace( {
+				'process.env.NODE_ENV': JSON.stringify( 'production' ),
+			} ),
+			typescript( { tsconfigOverride: noDeclarationFiles } ),
+			babel( {
+				extensions,
+				babelHelpers: 'bundled',
+			} ),
+			terser( {
+				compress: {
+					pure_getters: true, // eslint-disable-line camelcase
+					unsafe: true,
+					unsafe_comps: true, // eslint-disable-line camelcase
+					warnings: false,
+				},
+			} ),
+		],
+	},
+
+	// UMD Development
+	{
+		input: 'src/index.js',
+		output: {
+			file: 'dist/index.js',
+			format: 'umd',
+			name: 'FreshDataFramework',
+			indent: false,
+			globals: externalDependencyGlobals,
+		},
+		external: isExternalDependency,
+		plugins: [
+			resolve( { extensions } ),
+			typescript( { tsconfigOverride: noDeclarationFiles } ),
+			babel( {
+				extensions,
+				babelHelpers: 'bundled',
+			} ),
+			replace( {
+				'process.env.NODE_ENV': JSON.stringify( 'development' ),
+			} ),
+		],
+	},
+
+	// UMD Production
+	{
+		input: 'src/index.js',
+		output: {
+			file: 'dist/index.min.js',
+			format: 'umd',
+			name: 'FreshDataFramework',
+			indent: false,
+			globals: externalDependencyGlobals,
+		},
+		external: isExternalDependency,
+		plugins: [
+			resolve( { extensions } ),
+			typescript( { tsconfigOverride: noDeclarationFiles } ),
+			babel( {
+				extensions,
+				babelHelpers: 'bundled',
+			} ),
+			replace( {
+				'process.env.NODE_ENV': JSON.stringify( 'development' ),
+			} ),
+			terser( {
+				compress: {
+					pure_getters: true, // eslint-disable-line camelcase
+					unsafe: true,
+					unsafe_comps: true, // eslint-disable-line camelcase
+					warnings: false,
+				},
+			} ),
+		],
+	},
+];

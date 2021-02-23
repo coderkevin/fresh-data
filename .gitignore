@@ -1,7 +1,12 @@
 .vscode
 .DS_Store
-node_modules/
 coverage/
 dist/
 es/
 lib/
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
