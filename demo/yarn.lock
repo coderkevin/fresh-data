@@ -1629,7 +1629,7 @@ __metadata:
     "@testing-library/dom": ^7.29.6
     "@testing-library/jest-dom": 5.11.9
     "@testing-library/react": 11.2.5
-    "@testing-library/user-event": 12.7.2
+    "@testing-library/user-event": 13.0.10
     "@typescript-eslint/eslint-plugin": ^4.15.2
     "@typescript-eslint/parser": ^4.15.2
     babel-eslint: ^10.1.0
@@ -2275,14 +2275,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:12.7.2":
-  version: 12.7.2
-  resolution: "@testing-library/user-event@npm:12.7.2"
+"@testing-library/user-event@npm:13.0.10":
+  version: 13.0.10
+  resolution: "@testing-library/user-event@npm:13.0.10"
   dependencies:
     "@babel/runtime": ^7.12.5
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
-  checksum: 703daa08bc47201adca46cac6974f867e3e50d6c5b73644ab235245f7e6c3c2e8d30f9fa8a6bd063a38f36e9f4404bc9cc0f85ef23734ab95b541d1ac3be11f3
+  checksum: c8050970fbe80b72c973f55ab7935b857f1e8318795fd39a8c5c42236bccdd3ba4477fcb13ef9385975d8e82f8e24f71ae412c5b4b00048c0d8d71e18a21afdd
   languageName: node
   linkType: hard
 
