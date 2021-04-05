@@ -1613,7 +1613,7 @@ __metadata:
     debug: 4.3.1
     eslint: 7.22.0
     eslint-config-wordpress: 2.0.0
-    eslint-plugin-jest: 24.3.2
+    eslint-plugin-jest: 24.3.4
     eslint-plugin-jsx-a11y: 6.4.1
     eslint-plugin-react: 7.23.1
     eslint-plugin-wordpress: "git://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress.git"
@@ -1661,7 +1661,7 @@ __metadata:
     debug: 4.3.1
     eslint: 7.22.0
     eslint-config-wordpress: 2.0.0
-    eslint-plugin-jest: 24.3.2
+    eslint-plugin-jest: 24.3.4
     eslint-plugin-jsx-a11y: 6.4.1
     eslint-plugin-react: 7.23.1
     eslint-plugin-wordpress: "git://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress.git"
@@ -3821,9 +3821,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:24.3.2":
-  version: 24.3.2
-  resolution: "eslint-plugin-jest@npm:24.3.2"
+"eslint-plugin-jest@npm:24.3.4":
+  version: 24.3.4
+  resolution: "eslint-plugin-jest@npm:24.3.4"
   dependencies:
     "@typescript-eslint/experimental-utils": ^4.0.1
   peerDependencies:
@@ -3832,7 +3832,7 @@ __metadata:
   peerDependenciesMeta:
     "@typescript-eslint/eslint-plugin":
       optional: true
-  checksum: caf92f0bab6800bbf1fcfa8d75e1b7ad2bfb77914abdf1f0c33ac2b0d3b15c48cbec7b36a828931048f71dc181bbda9ede1d74b9a153f92029de0680644d1d14
+  checksum: 22a5b2a02720849d3dab12ffc49491e739d332258d628c7990d181a48d1b2c03d1dd5406cdc3acc9e4b978910896b38b9abfd2bc1381910a49cc23e593c2f7e3
   languageName: node
   linkType: hard
 
@@ -4384,7 +4384,7 @@ __metadata:
     codecov: 3.8.1
     eslint: 7.22.0
     eslint-config-wordpress: 2.0.0
-    eslint-plugin-jest: 24.3.2
+    eslint-plugin-jest: 24.3.4
     eslint-plugin-jsx-a11y: 6.4.1
     eslint-plugin-react: 7.23.1
     eslint-plugin-wordpress: "git://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress.git"
