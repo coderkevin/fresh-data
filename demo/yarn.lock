@@ -1668,7 +1668,7 @@ __metadata:
     redux: 4.0.5
     typescript: 4.1.5
     web-vitals: 1.1.1
-    webpack: 5.31.0
+    webpack: 5.32.0
   languageName: unknown
   linkType: soft
 
@@ -15599,9 +15599,9 @@ typescript@4.1.5:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.31.0":
-  version: 5.31.0
-  resolution: "webpack@npm:5.31.0"
+"webpack@npm:5.32.0":
+  version: 5.32.0
+  resolution: "webpack@npm:5.32.0"
   dependencies:
     "@types/eslint-scope": ^3.7.0
     "@types/estree": ^0.0.46
@@ -15631,7 +15631,7 @@ typescript@4.1.5:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: a419dff80c83969a28f0c130f003487a570870b3bde44a3bcca543f5d052b8c6dd5edd0e330251a632c1eb3bc85944fa42fc7159d18abf210c47189f9da56fd9
+  checksum: b9fd7d48d1de3d430130dd081a4f6834505168441961f41af08f575dc5691bbff8c70cd1edf885cd8bee7339eeb3e9a71cbbcac69f47e543427609f30e5985a1
   languageName: node
   linkType: hard
 
