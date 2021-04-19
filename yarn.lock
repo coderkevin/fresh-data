@@ -1529,12 +1529,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.4.2, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.12.13
   resolution: "@babel/runtime@npm:7.12.13"
   dependencies:
     regenerator-runtime: ^0.13.4
   checksum: 52e8ac97f5686fc0718592542b5aab4b231e52b89f432d81c5d7a03d43891b187c7cc3cf2ccc7b99a967c9d7c33afe3815dc04db6185017cb3933b6c8b1f535a
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.13.10":
+  version: 7.13.10
+  resolution: "@babel/runtime@npm:7.13.10"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 22014226b96a8c8e8d4e8bcdb011f317d1b32881aef424a669dc6ceaee14993d3609172967853cbf9c25c724c25145d45885b6c9df56ba241c12820776607f1f
   languageName: node
   linkType: hard
 
@@ -1708,7 +1717,7 @@ __metadata:
     "@babel/plugin-transform-runtime": 7.13.15
     "@babel/preset-env": 7.13.15
     "@babel/preset-typescript": 7.13.0
-    "@babel/runtime": ^7.4.2
+    "@babel/runtime": ^7.13.10
     "@rollup/plugin-babel": 5.3.0
     babel-core: 7.0.0-bridge.0
     babel-eslint: 10.1.0
@@ -1751,7 +1760,7 @@ __metadata:
     "@babel/preset-env": 7.13.15
     "@babel/preset-react": 7.13.13
     "@babel/preset-typescript": 7.13.0
-    "@babel/runtime": ^7.1.2
+    "@babel/runtime": ^7.13.10
     "@fresh-data/framework": ^0.7.0
     "@rollup/plugin-babel": 5.3.0
     "@testing-library/jest-dom": 5.11.10
