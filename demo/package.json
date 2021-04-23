@@ -5,7 +5,7 @@
   "dependencies": {
     "@fresh-data/framework": "0.7.0",
     "@fresh-data/react-provider": "0.7.0",
-    "@testing-library/dom": "7.30.3",
+    "@testing-library/dom": "7.30.4",
     "@testing-library/jest-dom": "5.11.10",
     "@testing-library/react": "11.2.5",
     "@testing-library/user-event": "13.0.16",
