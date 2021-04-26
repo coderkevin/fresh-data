@@ -1828,7 +1828,7 @@ __metadata:
     react: 17.0.2
     react-dom: 17.0.2
     react-redux: 7.2.4
-    redux: 4.0.5
+    redux: 4.1.0
     rimraf: 3.0.2
     rollup: 2.45.2
     rollup-plugin-node-resolve: 5.2.0
@@ -7241,7 +7241,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"redux@npm:4.0.5, redux@npm:^4.0.0":
+"redux@npm:4.1.0":
+  version: 4.1.0
+  resolution: "redux@npm:4.1.0"
+  dependencies:
+    "@babel/runtime": ^7.9.2
+  checksum: d939d0df1e12982c66c0ea767c8ec98276ee981ce0381222239b7f823c6ad02ea3e3c622859bcb4934446b3f86d735db35d7bd8b1697d359070e5fbef1f4ad49
+  languageName: node
+  linkType: hard
+
+"redux@npm:^4.0.0":
   version: 4.0.5
   resolution: "redux@npm:4.0.5"
   dependencies:
