@@ -1668,7 +1668,7 @@ __metadata:
     redux: 4.0.5
     typescript: 4.1.5
     web-vitals: 1.1.1
-    webpack: 5.35.1
+    webpack: 5.36.2
   languageName: unknown
   linkType: soft
 
@@ -3317,12 +3317,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.0.4":
-  version: 8.0.5
-  resolution: "acorn@npm:8.0.5"
+"acorn@npm:^8.2.1":
+  version: 8.2.2
+  resolution: "acorn@npm:8.2.2"
   bin:
     acorn: bin/acorn
-  checksum: b138585ca3948355fb0125105576b90326d4bdfd610f6c8bab382d281c9ea99d2360280c0aa4548f2e4b924eea2256a273140c49fc1be46d8a3b4b3bfefd8a62
+  checksum: 9e509a7a99e4e65cbfe48395f2d5576a7dbd30078ae95ea28f771921667c102b092d79994c20658ae98506ed4f2e86b5e6fcdbba3e6f8e18eda195568942cfe9
   languageName: node
   linkType: hard
 
@@ -15605,16 +15605,16 @@ typescript@4.1.5:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.35.1":
-  version: 5.35.1
-  resolution: "webpack@npm:5.35.1"
+"webpack@npm:5.36.2":
+  version: 5.36.2
+  resolution: "webpack@npm:5.36.2"
   dependencies:
     "@types/eslint-scope": ^3.7.0
     "@types/estree": ^0.0.47
     "@webassemblyjs/ast": 1.11.0
     "@webassemblyjs/wasm-edit": 1.11.0
     "@webassemblyjs/wasm-parser": 1.11.0
-    acorn: ^8.0.4
+    acorn: ^8.2.1
     browserslist: ^4.14.5
     chrome-trace-event: ^1.0.2
     enhanced-resolve: ^5.8.0
@@ -15637,7 +15637,7 @@ typescript@4.1.5:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 8544de163f91d7872a5fd60593ca7d55c7663b24bcb60778bad7a6c091302ccb311d6f26487cd14b8481f6024567c1456506ce98c083ceccfe35d6dda95b3df5
+  checksum: 221f75148a40809ce4c8c2f51e3510d716a75ba086ddd18f4d8313f2f18f18efce74b55bfee58223b8ae2d8bcab035d07d2a8f5690c3f3f6a4ce59d015879179
   languageName: node
   linkType: hard
 
