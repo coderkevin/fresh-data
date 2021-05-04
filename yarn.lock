@@ -1765,7 +1765,7 @@ __metadata:
     babel-core: 7.0.0-bridge.0
     babel-eslint: 10.1.0
     babel-jest: 26.6.3
-    codecov: 3.8.1
+    codecov: 3.8.2
     debug: 4.3.1
     eslint: 7.25.0
     eslint-config-wordpress: 2.0.0
@@ -1812,7 +1812,7 @@ __metadata:
     babel-core: 7.0.0-bridge.0
     babel-eslint: 10.1.0
     babel-jest: 26.6.3
-    codecov: 3.8.1
+    codecov: 3.8.2
     cross-env: 7.0.3
     debug: 4.3.1
     eslint: 7.25.0
@@ -2542,13 +2542,6 @@ __metadata:
   bin:
     acorn: bin/acorn
   checksum: 2bde98c28c1be9a08e41e581179b776b43396c9486ce52b2b9848d73c53df38c516b7edba4bacdc84cabc9d7a3299f3b46ef240ae261c38dbf8ddd89f635bd32
-  languageName: node
-  linkType: hard
-
-"agent-base@npm:5":
-  version: 5.1.1
-  resolution: "agent-base@npm:5.1.1"
-  checksum: aff8e856932ba63bbe097ac460f2f474669c5a1ca7674d3be19d4c258b4276a6b71863fb25c8bc3d424320d0c81652044098346403e759a65a76712e697633fa
   languageName: node
   linkType: hard
 
@@ -3336,18 +3329,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"codecov@npm:3.8.1":
-  version: 3.8.1
-  resolution: "codecov@npm:3.8.1"
+"codecov@npm:3.8.2":
+  version: 3.8.2
+  resolution: "codecov@npm:3.8.2"
   dependencies:
     argv: 0.0.2
     ignore-walk: 3.0.3
-    js-yaml: 3.14.0
-    teeny-request: 6.0.1
+    js-yaml: 3.14.1
+    teeny-request: 7.0.1
     urlgrey: 0.4.4
   bin:
     codecov: bin/codecov
-  checksum: 8aa521fc3bc67d94163a055c92811a223a31454c83c9ff956b12a9347a71aa54fbcd5d2006546162e7828eb0f0bcb8bc7b24d77a276572436623a4aa17bc1100
+  checksum: 1b592a40b0c9c373aeef031d9f8bbfb1b2815f51394d055068dce89f014a6ac851504987ceff6f76292b165b1d2964726eb7dc2517bf911afbdd5a57dff74d6e
   languageName: node
   linkType: hard
 
@@ -4547,7 +4540,7 @@ __metadata:
   resolution: "fresh-data@workspace:."
   dependencies:
     babel-eslint: 10.1.0
-    codecov: 3.8.1
+    codecov: 3.8.2
     eslint: 7.25.0
     eslint-config-wordpress: 2.0.0
     eslint-plugin-jest: 24.3.6
@@ -4962,13 +4955,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"https-proxy-agent@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "https-proxy-agent@npm:4.0.0"
+"https-proxy-agent@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "https-proxy-agent@npm:5.0.0"
   dependencies:
-    agent-base: 5
+    agent-base: 6
     debug: 4
-  checksum: d3d20730cdcfa1b1ac492280501fa7b14ee89eb4fa2e7d300cc260463b48ea98b6cf1d4b287f40faa8c36c2f88d87819b4b419be5ec4055e9dcd2db501ce4680
+  checksum: 18aa04ea08cc069fa0c83d03475d1bc43e13bfa43d5cffc0c3a07430f755e1ac914049570302775adac82aa5a779643ef2c6c270c057d7a8523a7f6f46b4866a
   languageName: node
   linkType: hard
 
@@ -5976,19 +5969,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:3.14.0":
-  version: 3.14.0
-  resolution: "js-yaml@npm:3.14.0"
-  dependencies:
-    argparse: ^1.0.7
-    esprima: ^4.0.0
-  bin:
-    js-yaml: bin/js-yaml.js
-  checksum: 2eb95464e5263aedc20ae2d9280f0e29b00adab15ece080ec42473d7055efaab24b904108644d115f687efe05a5bde02972b883aafa93607c4c108f667a56fa7
-  languageName: node
-  linkType: hard
-
-"js-yaml@npm:^3.13.1":
+"js-yaml@npm:3.14.1, js-yaml@npm:^3.13.1":
   version: 3.14.1
   resolution: "js-yaml@npm:3.14.1"
   dependencies:
@@ -6542,7 +6523,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.2.0":
+"node-fetch@npm:^2.6.1":
   version: 2.6.1
   resolution: "node-fetch@npm:2.6.1"
   checksum: cbb171635e538162b977eac5dfe7a1e07a9a02e991924377a6435502291e2f823d306b95aabc455caebf4a118ccf836868462bc70ccc3095af02bb9da61fda37
@@ -8310,16 +8291,16 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"teeny-request@npm:6.0.1":
-  version: 6.0.1
-  resolution: "teeny-request@npm:6.0.1"
+"teeny-request@npm:7.0.1":
+  version: 7.0.1
+  resolution: "teeny-request@npm:7.0.1"
   dependencies:
     http-proxy-agent: ^4.0.0
-    https-proxy-agent: ^4.0.0
-    node-fetch: ^2.2.0
+    https-proxy-agent: ^5.0.0
+    node-fetch: ^2.6.1
     stream-events: ^1.0.5
-    uuid: ^3.3.2
-  checksum: 8721d128d0ac98043c985f67cd5511fe59f4e31ba0d93512e187c9cf348a51a82722e8f8ed7e1a949a5667f7317ddb40f2f15d57ded193881b3a19e271db0f6e
+    uuid: ^8.0.0
+  checksum: d62a642f1b72b898e7479acf95e9e40252c6808ed259c6e2537d85dd444b8beb461fcd08a6d8c37482ea58906014a9dc4d89c3ac673d1ef0de0f20ee8ee0c8ae
   languageName: node
   linkType: hard
 
@@ -8703,7 +8684,7 @@ typescript@4.1.5:
   languageName: node
   linkType: hard
 
-"uuid@npm:^8.3.0":
+"uuid@npm:^8.0.0, uuid@npm:^8.3.0":
   version: 8.3.2
   resolution: "uuid@npm:8.3.2"
   bin:
