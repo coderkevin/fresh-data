@@ -1667,7 +1667,7 @@ __metadata:
     react-scripts: 4.0.3
     redux: 4.1.0
     typescript: 4.1.5
-    web-vitals: 1.1.2
+    web-vitals: 2.0.1
     webpack: 5.40.0
   languageName: unknown
   linkType: soft
@@ -2244,23 +2244,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:8.0.0":
-  version: 8.0.0
-  resolution: "@testing-library/dom@npm:8.0.0"
-  dependencies:
-    "@babel/code-frame": ^7.10.4
-    "@babel/runtime": ^7.12.5
-    "@types/aria-query": ^4.2.0
-    aria-query: ^4.2.2
-    chalk: ^4.1.0
-    dom-accessibility-api: ^0.5.6
-    lz-string: ^1.4.4
-    pretty-format: ^27.0.2
-  checksum: cd5bcc59c448ebea5c805e980aa1f1d73c480c2cd70567ac61c20f4530909f2655ce66ed38e49a21cd41112d69ad38e4b9dfd2e98f12f40339763f0dddd08916
-  languageName: node
-  linkType: hard
-
-"@testing-library/dom@npm:^8.0.0":
+"@testing-library/dom@npm:8.0.0, @testing-library/dom@npm:^8.0.0":
   version: 8.0.0
   resolution: "@testing-library/dom@npm:8.0.0"
   dependencies:
@@ -5910,13 +5894,6 @@ __metadata:
   dependencies:
     esutils: ^2.0.2
   checksum: 2eae469bd2889ceee9892083a67340b3622568fe5290edce620e5d5ddab23d644b2a780e9a7c68ad9c8a62716a70c5e484402ac93a398fa78b54b7505592aa7f
-  languageName: node
-  linkType: hard
-
-"dom-accessibility-api@npm:^0.5.4":
-  version: 0.5.4
-  resolution: "dom-accessibility-api@npm:0.5.4"
-  checksum: 39351d26a3732312f14411effef698204bf6c79a7d5eb0664441897541243f2cdf2e508aca52684ccf3b10df6708a6c265d1fde323eebcb8363a1093f5927b10
   languageName: node
   linkType: hard
 
@@ -15712,10 +15689,10 @@ typescript@4.1.5:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:1.1.2":
-  version: 1.1.2
-  resolution: "web-vitals@npm:1.1.2"
-  checksum: 76b4979a8d786201ac5c165ddea67a1076c07565e823f0d77aa3a3678e9ba6d2856ce14a89af30efe302960e3310c1972a1bbccab2b5bad61eb62a1a33e11f4f
+"web-vitals@npm:2.0.1":
+  version: 2.0.1
+  resolution: "web-vitals@npm:2.0.1"
+  checksum: 9fd83a637e682ed553831d8a9134f1d6ab3fe7a20467397c716db4391b9f8f90f4b4bf36035623131a7178eb0adff66fc3690a7df79cf9751e2fe51434f5ee46
   languageName: node
   linkType: hard
 
