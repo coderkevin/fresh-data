@@ -1877,7 +1877,7 @@ __metadata:
     jest: 27.0.1
     lodash: 4.17.21
     rimraf: 3.0.2
-    rollup: 2.50.2
+    rollup: 2.52.3
     rollup-plugin-node-resolve: 5.2.0
     rollup-plugin-replace: 2.2.0
     rollup-plugin-terser: 7.0.2
@@ -1930,7 +1930,7 @@ __metadata:
     react-redux: 7.2.4
     redux: 4.1.0
     rimraf: 3.0.2
-    rollup: 2.50.2
+    rollup: 2.52.3
     rollup-plugin-node-resolve: 5.2.0
     rollup-plugin-replace: 2.2.0
     rollup-plugin-terser: 7.0.2
@@ -4691,7 +4691,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@^2.3.2, fsevents@~2.3.1":
+"fsevents@^2.3.2, fsevents@~2.3.1, fsevents@~2.3.2":
   version: 2.3.2
   resolution: "fsevents@npm:2.3.2"
   dependencies:
@@ -4700,7 +4700,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@^2.3.2#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.1#builtin<compat/fsevents>":
+"fsevents@patch:fsevents@^2.3.2#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.1#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#builtin<compat/fsevents>":
   version: 2.3.2
   resolution: "fsevents@patch:fsevents@npm%3A2.3.2#builtin<compat/fsevents>::version=2.3.2&hash=11e9ea"
   dependencies:
@@ -7610,17 +7610,17 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"rollup@npm:2.50.2":
-  version: 2.50.2
-  resolution: "rollup@npm:2.50.2"
+"rollup@npm:2.52.3":
+  version: 2.52.3
+  resolution: "rollup@npm:2.52.3"
   dependencies:
-    fsevents: ~2.3.1
+    fsevents: ~2.3.2
   dependenciesMeta:
     fsevents:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 334e7550c0adbf7f3ad9ae2699f30de9ed7368c1d2dcda4940d070fee287ea7bc8e00dd623adac6c4ec247488885e01a9ea5c82dfdaf467c5b0433c4690e42fd
+  checksum: 63113f59a649fb174075e36ea938944a2d9931a55cb763c64c8cdfad9aaf1443461d441129c63abb2ec8207c9a26bfccd174e84616ae8a2bd2d0dcca18407be1
   languageName: node
   linkType: hard
 
