@@ -30,7 +30,7 @@
 	},
 	"devDependencies": {
 		"babel-eslint": "10.1.0",
-		"codecov": "3.8.2",
+		"codecov": "3.8.3",
 		"eslint": "7.29.0",
 		"eslint-config-wordpress": "2.0.0",
 		"eslint-plugin-jest": "24.3.6",
