@@ -1667,7 +1667,7 @@ __metadata:
     react-scripts: 4.0.3
     redux: 4.1.0
     typescript: 4.1.5
-    web-vitals: 2.0.1
+    web-vitals: 2.1.4
     webpack: 5.40.0
   languageName: unknown
   linkType: soft
@@ -15689,10 +15689,10 @@ typescript@4.1.5:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:2.0.1":
-  version: 2.0.1
-  resolution: "web-vitals@npm:2.0.1"
-  checksum: 9fd83a637e682ed553831d8a9134f1d6ab3fe7a20467397c716db4391b9f8f90f4b4bf36035623131a7178eb0adff66fc3690a7df79cf9751e2fe51434f5ee46
+"web-vitals@npm:2.1.4":
+  version: 2.1.4
+  resolution: "web-vitals@npm:2.1.4"
+  checksum: cb643479ebf63fb7b81dd3c074b4e77b93ba910bbef0c739133a8583121fade76d28a095cc358432c67e9b17356818a4be99394a5fba55e5abc6d2dd427a3757
   languageName: node
   linkType: hard
 
