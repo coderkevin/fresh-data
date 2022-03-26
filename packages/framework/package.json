@@ -54,7 +54,7 @@
 		"babel-eslint": "10.1.0",
 		"babel-jest": "27.0.5",
 		"codecov": "3.8.2",
-		"debug": "4.3.1",
+		"debug": "4.3.4",
 		"eslint": "7.29.0",
 		"eslint-config-wordpress": "2.0.0",
 		"eslint-plugin-jest": "24.3.6",

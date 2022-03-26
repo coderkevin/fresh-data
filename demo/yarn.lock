@@ -1650,7 +1650,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": 4.25.0
     "@typescript-eslint/parser": 4.25.0
     babel-eslint: 10.1.0
-    debug: 4.3.2
+    debug: 4.3.4
     eslint: 7.29.0
     eslint-config-react-app: 6.0.0
     eslint-plugin-flowtype: 5.7.2
@@ -5600,15 +5600,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4.3.2":
-  version: 4.3.2
-  resolution: "debug@npm:4.3.2"
+"debug@npm:4.3.4":
+  version: 4.3.4
+  resolution: "debug@npm:4.3.4"
   dependencies:
     ms: 2.1.2
   peerDependenciesMeta:
     supports-color:
       optional: true
-  checksum: 5543570879e2274f6725d4285a034d6e0822d35faefc6f55965933fb440e8c21eb3a0bef934e66f4b6b491f898ee2de37cab980e9d4fd61372136c19d3ce4527
+  checksum: 7d71c93be25ed05e85840ec12df1a6d1848adbf8bc66948017ad4120fed17d7889e305adec560c18d70710e6de0c55548fbed170f4355045bbbbbd2afd1532a2
   languageName: node
   linkType: hard
 
