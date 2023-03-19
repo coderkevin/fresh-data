@@ -1665,7 +1665,7 @@ __metadata:
     react-dom: 17.0.2
     react-redux: 7.2.4
     react-scripts: 4.0.3
-    redux: 4.1.0
+    redux: 4.2.1
     typescript: 4.1.5
     web-vitals: 2.0.1
     webpack: 5.40.0
@@ -13057,12 +13057,12 @@ fsevents@^2.1.3:
   languageName: node
   linkType: hard
 
-"redux@npm:4.1.0":
-  version: 4.1.0
-  resolution: "redux@npm:4.1.0"
+"redux@npm:4.2.1":
+  version: 4.2.1
+  resolution: "redux@npm:4.2.1"
   dependencies:
     "@babel/runtime": ^7.9.2
-  checksum: d939d0df1e12982c66c0ea767c8ec98276ee981ce0381222239b7f823c6ad02ea3e3c622859bcb4934446b3f86d735db35d7bd8b1697d359070e5fbef1f4ad49
+  checksum: 90921c2ab4d2a20f8b7dad4a4c84cc6bd78818cb782ebab89b6f6c8be6b1c6eb86db8a4da458ca2e073cfd89afdf6ef3b91bc7fad65f140d7b3aabef80b37008
   languageName: node
   linkType: hard
 
