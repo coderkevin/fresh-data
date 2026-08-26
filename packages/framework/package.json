@@ -63,7 +63,7 @@
 		"eslint-plugin-wordpress": "git://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress.git",
 		"identity-obj-proxy": "3.0.0",
 		"jest": "27.0.5",
-		"lodash": "4.17.21",
+		"lodash": "4.18.1",
 		"rimraf": "3.0.2",
 		"rollup": "2.52.3",
 		"rollup-plugin-node-resolve": "5.2.0",
